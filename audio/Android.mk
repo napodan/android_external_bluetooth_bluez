@@ -37,7 +37,8 @@ LOCAL_C_INCLUDES:= \
 LOCAL_SHARED_LIBRARIES := \
 	libbluetooth \
 	libbluetoothd \
-	libdbus
+	libdbus \
+	liblog \
 
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/bluez-plugin
@@ -68,7 +69,8 @@ LOCAL_C_INCLUDES:= \
 	system/bluetooth/bluez-clean-headers
 
 LOCAL_SHARED_LIBRARIES := \
-	libcutils
+	libcutils \
+	liblog \
 
 LOCAL_MODULE := liba2dp
 
