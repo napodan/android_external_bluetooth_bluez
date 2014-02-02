@@ -18,3 +18,12 @@ ifeq ($(BOARD_HAVE_BLUETOOTH),true)
   include $(all-subdir-makefiles)
 endif
 endif
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := dbus.conf
+LOCAL_SRC_FILES := etc/$(LOCAL_MODULE)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT)/etc
+include $(BUILD_PREBUILT)
+
+
